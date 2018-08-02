@@ -1,0 +1,20 @@
+package date;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat data1 = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat data2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date d1 = data1.parse("02/03/1996");
+		Date d2 = data2.parse("02/03/1996 13:05:01");
+		
+		System.out.println(d1);
+		
+	}
+}

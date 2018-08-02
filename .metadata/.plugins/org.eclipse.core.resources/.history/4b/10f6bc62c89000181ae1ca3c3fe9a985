@@ -1,0 +1,15 @@
+package date;
+
+import java.text.SimpleDateFormat;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		SimpleDateFormat data1 = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat data2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		System.out.println(data2);
+		
+	}
+}

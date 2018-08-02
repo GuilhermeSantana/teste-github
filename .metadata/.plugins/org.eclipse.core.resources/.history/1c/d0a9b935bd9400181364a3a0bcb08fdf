@@ -1,0 +1,29 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import geometria.Triangulo;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Triangulo X, Y;
+		X = new Triangulo();
+		Y = new Triangulo();
+		
+		System.out.println("DIGITE OS DADOS DO TRIANGULO X: ");
+		double X1 = sc.nextDouble();
+		
+		System.out.println("DIGITE OS DADOS DO TRIANGULO Y: ");
+		double Y1 = sc.nextDouble();
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,50 @@
+package conta;
+
+public class Conta {
+
+	private int numero;
+	private String titular;
+	private double saldoDaConta;
+
+	public Conta(int numero, String titular, double depositoInicial) {
+
+		this.numero = numero;
+		this.titular = titular;
+		depositar(depositoInicial);
+	}
+
+	public Conta(int numero, String titular) {
+
+		this.numero = numero;
+		this.titular = titular;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public String getTitular() {
+		return titular;
+	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public double getSaldoDaConta() {
+		return saldoDaConta;
+	}
+
+	public void depositar(double quantidade) {
+		saldoDaConta += quantidade;
+	}
+
+	public void sacar(double quantidade) {
+		saldoDaConta -= quantidade + 5.0;
+	}
+
+	public String toString() {
+		return "NUMERO: " + numero + ", TITULAR: " + titular + ", SALDO DA CONTA: R$ " + saldoDaConta;
+	}
+
+}

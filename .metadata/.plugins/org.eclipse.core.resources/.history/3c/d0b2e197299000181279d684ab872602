@@ -1,0 +1,20 @@
+package curso;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		byte x = 10;
+		int conta;
+		
+		conta = x - 2;
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("O RESULTADO DA CONTA É: " + conta);
+		sc.close();
+	}
+
+}

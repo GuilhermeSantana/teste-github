@@ -1,0 +1,18 @@
+package curso;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		String s = "33";
+		int a;
+		
+		a = Integer.parseInt(s);
+		
+		System.out.println(a);
+		
+	}
+
+}
